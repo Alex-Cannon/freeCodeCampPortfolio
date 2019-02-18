@@ -12,7 +12,7 @@ Freecodecamp is a non-profit e-learning platform created for developers by devel
 This repo contains all algorithm challenges and solutions I have
 completed for freeCodeCamp.
 
-## Can I clone this repo
+## Can I clone this repo?
 Absolutely. This repo has an MIT liscense.
 Go ahead and fork/clone this repo and keep track of your
 freeCodeCamp algorithms.
