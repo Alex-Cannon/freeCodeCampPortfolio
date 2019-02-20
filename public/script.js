@@ -8,6 +8,7 @@ $(document).ready(function() {
 
   $.getJSON('/challenges/javascript', (data) => {
     data.forEach(html => {
+      console.log(html);
       $("#challenge-list").append(
         topCard + html + bottomCard
       );

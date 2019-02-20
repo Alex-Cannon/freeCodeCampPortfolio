@@ -6,9 +6,20 @@ body {
   margin-bottom: 15px;
 }
 
+.card h3 {
+  text-decoration: underline;
+}
+
+.card h4 {
+  margin-top: 1em;
+}
+
 pre {
-  background: #efefef;
   border-radius: 4px;
   padding: 15px;
   font-size: 1rem;
+}
+
+code span {
+  text-overflow: wrap;
 }

@@ -1,9 +1,9 @@
 ### appending-variables-to-strings
 
-#### Instructions
+#### { Instructions }
 Set someAdjective and append it to myStr using the += operator.
 
-#### My Solution
+#### { Solution }
 ```
 var someAdjective = "awesome";
 var myStr = "Learning to code is ";
