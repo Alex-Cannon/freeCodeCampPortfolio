@@ -10,16 +10,79 @@
 <body class="container-fluid">
   <div class="row justify-content-center">
     <div class="col-sm-12 col-md-9 col-lg-6 text-center">
-      <h1>freeCodeCamp Algorithms</h1>
+      
+      <div id="face-container">
+        <img src="assets/face_small.jpg" id="face" alt="Alex Cannon Picture"/>
+        <div id="face-subtitle" class="text-light bg-dark">
+          Hi! I'm Alex Cannon & I build websites. :)
+        </div>
+      </div>
+      <h1>FreeCodeCamp Portfolio</h1>
       <p>
-        Challenges by freeCodeCamp.
+        <b>1800+ hours</b> of project-based learning from <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferer noopener">FreeCodeCamp</a>.
         <br/>
-        Solutions by Alex Cannon.
+        Projects/Solutions by <a href="https://alex-cannon.github.io/" target="_blank" rel="noreferer noopener">Alex Cannon</a>.
       </p>
+
+      <h2 class="text-left">Certificates:</h2>
+      <div class="card text-left">
+        <div class="card-header" id="certifications">
+          Certifications (300+ hours each)
+        </div>
+        <div class="card-body show-certifications">
+          <div class="card-body-open">
+            <p>FreeCodeCamp offers 6 certifications each including over 300 hours of 100+
+              challenges and 5+ web applications projects.
+            </p>
+            <p>
+              I am actively pursuing all certificates, totaling in <b>1800+ hours</b> of
+              project-based learning.
+            </p>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush show-certifications">
+          <li class="list-group-item">Legacy: Front End Development (600 hours)</li>
+          <li class="list-group-item">In Progress: Responsive Web Design (300 hours)</li>
+          <li class="list-group-item">In Progress: Javascript Algorithms And Data Structures (300 hours)</li>
+        </ul>
+      </div>
+
+      <h2 class="text-left title">Projects:</h2>
+      <div class="card text-left">
+        <div class="card-header" id="projects" onclick="toggleMe('#responsiveDesign')">
+          Responsive Web Design
+        </div>
+        <ul class="list-group list-group-flush show-projects" id="responsiveDesign">
+          <li class="list-group-item">Build a Tribute Page</li>
+          <li class="list-group-item">Build a Survey Form</li>
+          <li class="list-group-item">Build a Product Landing Page</li>
+          <li class="list-group-item">Build a Documentation Page</li>
+          <li class="list-group-item">Build a Personal Portfolio Webpage</li>
+        </ul>
+      </div>
+
+      <h2 class="text-left title">Challenges (100+):</h2>
+      <p class="text-left">(Adding 100s of my challenges is a WIP)</p>
       <div class="text-left" id="challenge-list">
       </div>
+      <nav aria-label="Page Navigation">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>This webpage was created with love by <a href="https://alex-cannon.github.io/" target="_blank" rel="noreferer noopener">Alex Cannon</a></p>
+      
+    </div>
+  </footer>
 
   <script src="lib/jquery.min.js"></script>
   <script src="script.js"></script>
