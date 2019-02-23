@@ -29,7 +29,8 @@ app.get('/challenges/*', function(req, res) {
           result.html = decode(result.html);
           let code = Prism.highlight(result.html.match(selection)[1], Prism.languages.javascript, 'javascript');
           result.html = result.html.replace(selection, '<code>' + code + '</code>');
-          content[content.length - 1] = result.html; 
+
+          content[content.length - 1] = {data: result.attributes, html: result.html }; 
         });
     });
 

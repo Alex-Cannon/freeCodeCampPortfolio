@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head id="head">
-  <title>Algorithms - Alex Cannon</title>
+  <title>FreeCodecamp - Alex Cannon</title>
+  <link rel="icon" href="assets/face_small.jpg">
   <link href="lib/bootstrap.min.css" rel="stylesheet">
   <link href="lib/prism.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
@@ -9,17 +10,333 @@
 
 <body class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-9 col-lg-6 text-center">
-      <h1>freeCodeCamp Algorithms</h1>
-      <p>
-        Challenges by freeCodeCamp.
-        <br/>
-        Solutions by Alex Cannon.
-      </p>
-      <div class="text-left" id="challenge-list">
+    <div class="col-sm-12 col-md-9 col-lg-5 text-left">
+      
+      <div class="text-center">
+        <div id="face-container">
+          <img src="assets/face_small.jpg" id="face" alt="Alex Cannon Picture"/>
+          <div id="face-subtitle" class="text-light bg-dark">
+            Hi! I'm Alex Cannon & I build websites. :)
+          </div>
+        </div>
+        <h1>FreeCodeCamp Portfolio</h1>
+        <p>
+          <b>1800+ hours</b> of learning via <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferer noopener">FreeCodeCamp</a>.
+          <br/>
+          Projects/Solutions by <a href="https://alex-cannon.github.io/" target="_blank" rel="noreferer noopener">Alex Cannon</a>.
+        </p>
       </div>
+
+      <h2 class="title">Certifications:</h2>
+      <p>FreeCodeCamp certifications each include over <b>100+ challenges</b>
+        and <b>5+ web application projects</b> covering skills like HTML/HTML5, CSS/SCSS, Bootstrap, Javascript,
+        ReactJS, NodeJS, Express, MongoDB, and more!
+      </p>
+      <p>Students achieve <b>hands-on experience</b> developing web apps on FreeCodeCamp, relatable to any junior 
+        development role. I am actively pursuing all certificates, totaling in <b>1800+ hours</b> of
+        project-based learning.
+      </p>
+      <p>
+        Click a Certification to read more! :)
+      </p>
+
+      <div class="card">
+        <div class="card-header text-success" onclick="toggleMe('#front-end');">
+          Legacy: Front-End Development (600 hours)
+        </div>
+        <ul class="list-group list-group-flush show-projects" id="front-end">
+          <li class="list-group-item">
+            <p>
+              <a href="https://www.freecodecamp.org/certification/alex-cannon/legacy-front-end">View Certificate</a>
+              <br/>10 Projects - 100+ challenges
+            </p>
+            <div class="skills">
+              <span>HTML/HTML5</span>
+              <span>CSS/CSS3</span>
+              <span>Javascript</span>
+              <span>JQuery</span>
+              <span>Bootstrap</span>
+              <span>SCSS</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/NgOewL">Project: Build a Simon Says Game</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/NgMdgo">Project: Build a Tic Tac Toe Game</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/XgmWGb">Project: Build a Random Quote Machine</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/RgGQEJ">Project: Build a Wikipedia Viewer</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/zzqrpv">Project: Build a Weather App</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/NgdozM">Project: Build a Twitch Streamer Page</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/WOMwyP">Project: Build a Javascript Calculator</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/YQajGY">Project: Build a Pomodoro Clock</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/eRYVra">Project: Build a Personal Portfolio Webpage</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/RgwQZo">Project: Build a Tribute Page</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header" onclick="toggleMe('#responsiveDesign');">
+          WIP: Responsive Web Design (300 hours)
+        </div>
+        <ul class="list-group list-group-flush show-projects" id="responsiveDesign">
+          <li class="list-group-item">
+            <p>
+              <span class="text-danger">View Certificate</span>
+              <br/>5 Projects - 100+ challenges
+            </p>
+            <div class="skills">
+              <span>HTML/HTML5</span>
+              <span>CSS/CSS3</span>
+              <span>Javascript</span>
+              <span>Bootstrap</span>
+              <span>SCSS</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/RgwQZo">Project: Build a Tribute Page (HTML5, CSS3, Bootstrap)</a>
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Build a Survey Form (HTML5, CSS3, Bootstrap)
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Build a Product Landing Page (HTML5, CSS3, Bootstrap)
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/mGJEyd">Project: Build a Documentation Page (HTML5, CSS3, Bootstrap, Javascript)</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/eRYVra">Project: Build a Personal Portfolio Webpage (HTML5, CSS3, Bootstrap, Javascript)</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card  ">
+        <div class="card-header" onclick="toggleMe('#jsa');">
+          WIP: Javascript Algorithms and Data Structures (300 hours)
+        </div>
+        <ul class="list-group list-group-flush show-projects" id="jsa">
+          <li class="list-group-item">
+            <p>
+              <span class="text-danger">View Certificate</span>
+              <br/>5 Projects - 100+ challenges
+            </p>
+            <div class="skills">
+              <span>Javascript</span>
+              <span>Object Oriented Programming</span>
+              <span>Functional Programming</span>
+              <span>ES6</span>
+              <span>Regular Expressions</span>
+              <span>Debugging</span>
+            </div>
+          </li>
+          <li class="list-group-item text-danger">
+            Algorithm: Palindrome Checker
+          </li>
+          <li class="list-group-item text-danger">
+            Algorithm: Roman Numeral Converter
+          </li>
+          <li class="list-group-item text-danger">
+            Algorithm: Caesars Cipher
+          </li>
+          <li class="list-group-item text-danger">
+            Algorithm: Telephone Number Validator
+          </li>
+          <li class="list-group-item">
+            <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register">Algorithm: Cash Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header" onclick="toggleMe('#fel');">
+          WIP: Front End Libraries (300 hours)
+        </div>
+        <ul class="list-group list-group-flush show-projects" id="fel">
+          <li class="list-group-item">
+            <p>
+              <span class="text-danger">View Certificate</span>
+              <br/>5 Projects - 100+ challenges
+            </p>
+            <div class="skills">
+              <span>Javascript</span>
+              <span>React/Redux</span>
+              <span>JQuery</span>
+              <span>Bootstrap</span>
+              <span>Sass</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/XgmWGb">Project: Build a Random Quote Machine</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/GEedXp">Project: Build a Markdown Previewer</a>
+          </li>
+          <li class="list-group-item text-danger">Project: Build a Product Drum Machine</li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/WOMwyP">Project: Build a JavaScript Calculator</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://codepen.io/Alex_Cannon/pen/YQajGY">Project: Build a Personal Pomodoro Clock</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card  ">
+        <div class="card-header" onclick="toggleMe('#dvz');">
+          WIP: Data Visualization Certification (300 hours)
+        </div>
+        <ul class="list-group list-group-flush show-projects" id="dvz">
+          <li class="list-group-item">
+            <p>
+              <span class="text-danger">View Certificate</span>
+              <br/>5 Projects - 50+ challenges
+            </p>
+            <div class="skills">
+              <span>Javascript</span>
+              <span>D3</span>
+              <span>JSON</span>
+              <span>Apis</span>
+              <span>Ajax</span>
+            </div>
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Visualize Data with a Bar Chart
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Visualize Data with a Scatterplot Graph
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Visualize Data with a Scatterplot Graph
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Visualize Data with a Choropleth Map
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Visualize Data with a Treemap Diagram
+          </li>
+        </ul>
+      </div>
+      <div class="card  ">
+        <div class="card-header" onclick="toggleMe('#apm');">
+          WIP: Apis And Microservices Certification (300 hours)
+        </div>
+        <ul class="list-group list-group-flush show-projects" id="apm">
+          <li class="list-group-item">
+            <p>
+              <span class="text-danger">View Certificate</span>
+              <br/>5 Projects - 50+ challenges
+            </p>
+            <div class="skills">
+              <span>Javascript</span>
+              <span>NPM</span>
+              <span>Node</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>Mongoose</span>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <a href="https://timestamp-microservice-.glitch.me/">Project: Timestamp Microservice</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://request-header-parser-microservice-1.glitch.me/">Project: Request Header Microservice</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://url-squasher.glitch.me/">Project: URL Shortener Microservice</a>
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Exercise Tracker
+          </li>
+          <li class="list-group-item">
+            <a href="https://file-metadata-service-1.glitch.me/">Project: File Metadata Microservice</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card  ">
+        <div class="card-header" onclick="toggleMe('#isqa');">
+          WIP: Information Security And Quality Assurance (300 hours)
+        </div>
+        <ul class="list-group list-group-flush show-projects" id="isqa">
+          <li class="list-group-item">
+            <p>
+              <span class="text-danger">View Certificate</span>
+              <br/>5 Projects - 50+ challenges
+            </p>
+            <div class="skills">
+              <span>Information Security</span>
+              <span>QA</span>
+              <span>Chai</span>
+              <span>Node</span>
+              <span>Express</span>
+              <span>PassportJS</span>
+            </div>
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Metric-Imperial Converter
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Issue Tracker
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Personal Library
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Stock Price Checker
+          </li>
+          <li class="list-group-item text-danger">
+            Project: Anonymous Message Board
+          </li>
+        </ul>
+      </div>
+      <div class="card  ">
+        <div class="card-header text-info" onclick="toggleMe('#home');">
+          Take Home Projects
+        </div>
+        <ul class="list-group list-group-flush show-projects" id="home">
+          <li class="list-group-item">Project: Build a Tribute Page</li>
+          <li class="list-group-item">Project: Build a Survey Form</li>
+          <li class="list-group-item">Project: Build a Product Landing Page</li>
+          <li class="list-group-item">Project: Build a Documentation Page</li>
+          <li class="list-group-item">Project: Build a Personal Portfolio Webpage</li>
+        </ul>
+      </div>
+
+      <h2 class="title">Challenges (100+):</h2>
+      <p>(Adding 100s of my challenges is a WIP)</p>
+      <div id="challenge-list">
+      </div>
+      <nav aria-label="Page Navigation">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>This webpage was created with love by <a href="https://alex-cannon.github.io/" target="_blank" rel="noreferer noopener">Alex Cannon</a></p>
+      
+    </div>
+  </footer>
 
   <script src="lib/jquery.min.js"></script>
   <script src="script.js"></script>

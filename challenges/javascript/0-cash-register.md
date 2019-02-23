@@ -1,7 +1,11 @@
-### Cash Register Project
-
+---
+title: "Algorithm: Cash Register"
+certificate: "Javascript Algorithms and Data Structures"
+order: 0
+---
+Certificate: *Javascript Algorithms and Data Structures*
 #### { Instructions }
-Design a cash register drawer function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument.
+**Design a cash register drawer** function checkCashRegister() that accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument.
 
 cid is a 2D array listing available currency.
 
@@ -13,7 +17,7 @@ Return {status: "CLOSED", change: [...]} with cash-in-drawer as the value for th
 
 Otherwise, return {status: "OPEN", change: [...]}, with the change due in coins and bills, sorted in highest to lowest order, as the value of the change key.
 
-#### { Solution }
+#### { My Solution }
 ```
 // Value In pennies
 const BILLS = [
