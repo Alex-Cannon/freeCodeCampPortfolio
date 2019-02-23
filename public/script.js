@@ -26,20 +26,13 @@ $(document).ready(function() {
     });
   });
 
-  $("#certifications").click((e) => {
-    certsVisible = !certsVisible;
-    
-    if (certsVisible) {
-      $(".show-certifications").children().show();
-    } else {
-      $(".show-certifications").children().hide();
-    }
-  });
+  $(".show-certifications").children().hide();
+  $(".show-projects").children().hide();
 });
 
 // Handle Pagination buttons
 
-// Handle Card collapse
+// Handle Challenge Card collapse
 function handleCard(e) {
   const target = e.srcElement.id[e.srcElement.id.length - 1];
   challenges[target].visible = !challenges[target].visible;
@@ -51,7 +44,11 @@ function handleCard(e) {
   }
 }
 
+// Handle Generic card collapse
 function toggleMe(target) {
-  console.log("$("+target+")");
-  $(target).children().show();
+  if ($(target).children().css('display') === 'none') {
+    $(target).children().show();
+  } else {
+    $(target).children().hide();
+  }
 }

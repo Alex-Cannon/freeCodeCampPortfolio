@@ -16,12 +16,26 @@ body {
   right: -35px;
   padding: 5px;
   font-size: 0.9rem;
+  border-radius: 3px;
 }
 
 #face {
   max-width: 250px;
   border-radius: 100%;
 }
+
+.skills span {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px 5px 0;
+  border-radius: 3px;
+  background: #28a745;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.skills span:last-of-type { margin-right: 0; }
 
 .card {
   margin-bottom: 5px;
@@ -30,7 +44,7 @@ body {
 .card-header:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: #007bff!important;
+  background: #fff;
 }
 
 .title {
