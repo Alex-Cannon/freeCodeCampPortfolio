@@ -3,6 +3,10 @@ body {
   background: #efefef;
 }
 
+#intro {
+  margin-bottom: 2rem;
+}
+
 #face-container {
   position: relative;
   display: inline-block;
@@ -37,6 +41,10 @@ body {
 
 .skills span:last-of-type { margin-right: 0; }
 
+.title {
+  margin-top: 1em;
+}
+
 .card {
   margin-bottom: 5px;
 }
@@ -44,11 +52,10 @@ body {
 .card-header:hover {
   text-decoration: underline;
   cursor: pointer;
-  background: #fff;
 }
 
-.title {
-  margin-top: 1em;
+.card-header {
+  background: #fff;
 }
 
 .card-body {
