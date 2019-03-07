@@ -34,7 +34,8 @@ $(document).ready(function() {
 
 // Handle Challenge Card collapse
 function handleCard(e) {
-  const target = e.srcElement.id[e.srcElement.id.length - 1];
+  let id = e.srcElement.id;
+  const target = id.substring(id.indexOf('-') + 1);
   challenges[target].visible = !challenges[target].visible;
 
   if (challenges[target].visible) {
