@@ -1,13 +1,11 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image: 'node:10' 
+        }
+    }
     stages {
         stage('build') {
-            agent {
-                docker {
-                    label 'docker'
-                    image 'node:10'
-                }
-            }
             steps {
                 sh 'npm --version'
             }
