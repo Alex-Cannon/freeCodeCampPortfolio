@@ -4,9 +4,10 @@ var projects = [];
 var certsVisible = true;
 
 $(document).ready(function() {
-
+  alert('ready');
   // Fetch Challenges
-  $.getJSON('/challenges/javascript', (data) => {
+  $.get('/challenges/javascript', (data, status) => {
+    if (status !== 'success') throw err;
     challenges = data;
     challenges.forEach((item, i) => {
       $("#challenge-list").append(

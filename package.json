@@ -4,7 +4,8 @@
   "description": "Ongoing list of my completed freeCodeCamp algorithms",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node ./scripts/helpers.test.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,13 @@
   },
   "homepage": "https://github.com/Alex-Cannon/algorithms#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^5.14.1"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "express": "^4.16.4",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "markdown-parse": "^0.2.1",
     "prismjs": "^1.15.0",
     "unescape": "^1.0.1"
