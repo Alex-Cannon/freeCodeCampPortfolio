@@ -1,6 +1,6 @@
 pipeline {
     agent { docker { image 'node:10' } }
-    enviornment {
+    environment {
         HOME = '.'
     }
     stages {
