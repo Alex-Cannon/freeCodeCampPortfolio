@@ -4,7 +4,6 @@ var projects = [];
 var certsVisible = true;
 
 $(document).ready(function() {
-  alert('ready');
   // Fetch Challenges
   $.get('/challenges/javascript', (data, status) => {
     if (status !== 'success') throw err;
