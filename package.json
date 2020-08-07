@@ -26,7 +26,7 @@
     "express": "^4.16.4",
     "jquery": "^3.4.1",
     "markdown-parse": "^0.2.1",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.21.0",
     "unescape": "^1.0.1"
   }
 }
