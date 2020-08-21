@@ -24,7 +24,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "express": "^4.16.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "markdown-parse": "^0.2.1",
     "prismjs": "^1.21.0",
     "unescape": "^1.0.1"
